@@ -1,0 +1,23 @@
+name: Lean verification
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Install pinned Lean release
+        shell: bash
+        run: |
+          curl --fail --location --retry 3 https://github.com/leanprover/lean4/releases/download/v4.35.0/lean-4.35.0-linux.tar.zst -o "$RUNNER_TEMP/lean.tar.zst"
+          tar --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.35.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Check authored proof sources
+        run: python3 scripts/check_proofs.py
+      - name: Build checked proofs and fixture executable
+        run: lake build
+      - name: Run synthetic fixtures
+        run: lake exe reimbursement_demo

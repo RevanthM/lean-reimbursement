@@ -1,0 +1,15 @@
+{
+  "project": "lean-reimbursement",
+  "reviewedOn": "2026-11-15",
+  "policySource": "urn:mathalabs:synthetic-payer",
+  "policyRevision": "fixture-v1",
+  "status": "Invented test contract; no actual payer reimbursement rule or rate imported",
+  "effectiveStart": "2026-01-01",
+  "effectiveEndExclusive": "2027-01-01",
+  "sources": [
+    {"title": "CMS Physician Fee Schedule overview", "url": "https://www.cms.gov/medicare/physician-fee-schedule/search/overview", "usedFor": "Establishes that services, localities and policy indicators are relevant to payment; not used as a rate source"},
+    {"title": "CMS Physician Fee Schedule", "url": "https://www.cms.gov/cms-guide-medical-technology-companies-and-other-interested-parties/payment/physician-fee-schedule", "usedFor": "Background on RVUs, geographic adjustment and conversion factor; that formula is not implemented"},
+    {"title": "Formalizing all US case law in Lean", "url": "https://lexifina.com/blog/formalizing-all-us-case-law-in-lean", "usedFor": "Certificate-checking architecture inspiration; no code or evaluation reused"}
+  ],
+  "fixtures": {"origin": "Authored by Matha Labs", "realPayerRates": false, "patientData": false, "licensedProcedureCorpusImported": false, "regressionCount": 29, "currencyUnit": "integer cents", "costSharing": "Deductible first, then capped fixed copay"}
+}

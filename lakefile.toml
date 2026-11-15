@@ -1,0 +1,10 @@
+name = "lean-reimbursement"
+version = "0.1.0"
+defaultTargets = ["Reimbursement", "reimbursement_demo"]
+
+[[lean_lib]]
+name = "Reimbursement"
+
+[[lean_exe]]
+name = "reimbursement_demo"
+root = "Main"
