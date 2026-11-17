@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="316" viewBox="0 0 960 316" role="img" aria-labelledby="title desc">
+<title id="title">Figure 1. Distinct layers in a reimbursement decision</title>
+<desc id="desc">The figure organizes the domain. Only a small reviewed-input gate and synthetic allocation at the final two layers are implemented; the arrows do not represent delivered clinical or payer integrations. [1,6,11]</desc>
+<rect width="960" height="100%" rx="12" fill="#111e1b"/>
+<style>text{font-family:Arial,Helvetica,sans-serif}.label{fill:#f4f2ec;font-size:19px;font-weight:600}.detail{fill:#b5c4bc;font-size:16px}.num{fill:#ff8a62;font-size:14px;font-weight:700}</style>
+<rect x="26" y="20" width="436" height="120" rx="7" fill="#182d26" stroke="#52685d"/>
+<text class="num" x="44" y="49">01</text>
+<text class="label" x="78" y="50">Clinical documentation</text>
+<text class="detail" x="44" y="84">Reviewed findings and diagnosis support; no</text>
+<text class="detail" x="44" y="104">reimbursement amount follows automatically.</text>
+<path d="M 469 80 h 21 m -7 -6 l 7 6 -7 6" fill="none" stroke="#ff8a62" stroke-width="2"/>
+<rect x="498" y="20" width="436" height="120" rx="7" fill="#182d26" stroke="#52685d"/>
+<text class="num" x="516" y="49">02</text>
+<text class="label" x="550" y="50">Service and coverage</text>
+<text class="detail" x="516" y="84">Performed service, applicable policy, setting,</text>
+<text class="detail" x="516" y="104">locality, and reviewed coverage facts.</text>
+<rect x="26" y="162" width="436" height="120" rx="7" fill="#182d26" stroke="#52685d"/>
+<text class="num" x="44" y="191">03</text>
+<text class="label" x="78" y="192">Pricing and benefits</text>
+<text class="detail" x="44" y="226">Allowed amount and patient benefit state under a</text>
+<text class="detail" x="44" y="246">specified contract.</text>
+<path d="M 469 222 h 21 m -7 -6 l 7 6 -7 6" fill="none" stroke="#ff8a62" stroke-width="2"/>
+<rect x="498" y="162" width="436" height="120" rx="7" fill="#182d26" stroke="#52685d"/>
+<text class="num" x="516" y="191">04</text>
+<text class="label" x="550" y="192">Allocation or review</text>
+<text class="detail" x="516" y="226">The fixture emits an optional allocation; real</text>
+<text class="detail" x="516" y="246">adjudication and payment remain external.</text>
+</svg>

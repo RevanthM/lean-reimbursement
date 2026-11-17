@@ -34,3 +34,12 @@ Authored software and documentation are MIT licensed. Referenced third-party sou
 ## Publication
 
 Read the [Matha Labs research article](https://www.mathalabs.com/blog/reimbursement-in-lean/), [download the whitepaper PDF](docs/whitepaper.pdf), or inspect its [editable source](docs/whitepaper.md). The published evaluation uses synthetic fixtures only.
+
+
+## Expanded whitepaper edition
+
+The illustrated edition 2.0, revised November 16, 2026, adds methods, primary-source references, exact theorem boundaries, synthetic worked examples and a proposed evaluation protocol. [Read the paper](docs/whitepaper.md), [download the PDF](docs/whitepaper.pdf), or inspect the [structured source](docs/whitepaper.json). The first edition is retained in [the archive](docs/archive/2026-11-15/).
+
+To regenerate the PDF, Markdown and SVG figures from the structured source, install ReportLab and run `python3 tools/render_whitepaper.py`.
+
+The code and experimental counts are unchanged. The expanded paper identifies its exact evaluated implementation revision; new research plans are not reported as completed measurements.
